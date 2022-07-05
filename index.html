@@ -94,31 +94,12 @@
     </div>
 </div>
 
-<audio id="audio" src="assets/sounds/Recording.m4a" preload="auto"></audio>
-
-<script type="text/javascript">
-    function playa(){
-		var audio = document.getElementById("audio");
-		audio.pause();
-        audio.play();
-    };
-
-	$(selector).click(function(e) {
-		if(e.shiftKey) {
-			var audioElement = document.createElement('audio');
-			audioElement.setAttribute('src', 'assets/sounds/Recording.m4a');
-			audioElement.play();
-		}
-	});
-</script>
-
-<!-- External JavaScripts -->
+<audio id="audio" src="assets/sounds/Recording.m4a"></audio>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="assets/vendors/bootstrap/js/popper.min.js"></script>
 <script src="assets/vendors/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/vendors/owl-carousel/owl.carousel.js"></script>
 <script src="assets/js/functions.js"></script>
-<!-- Revolution JavaScripts Files -->
 <script src="assets/vendors/revolution/js/jquery.themepunch.tools.min.js"></script>
 <script src="assets/vendors/revolution/js/jquery.themepunch.revolution.min.js"></script>
 <script src="assets/vendors/revolution/js/extensions/revolution.extension.carousel.min.js"></script>
@@ -209,6 +190,19 @@ jQuery(document).ready(function() {
 	}
 });	
 </script>
-</body>
+<script>
+	$(document).keydown(function(eventObject) {
+		if(eventObject.which==37) {//left arrow
+			$('.owl-prev').click();//emulates click on prev button
+		} 
+		else if(eventObject.which==39) {//right arrow
+			$('.owl-next').click();//emulates click on next button
+		}
+		else if(eventObject.shiftKey) {
+			$('#audio').play();
+		}
+	});
+</script>
 
+</body>
 </html>
