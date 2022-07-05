@@ -26,8 +26,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/shortcodes/shortcodes.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&family=Kantumruy+Pro:wght@700&family=Poppins&display=swap" rel="stylesheet">	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link class="skin" rel="stylesheet" type="text/css" href="assets/css/color/color-1.css">
 	
 	<!-- REVOLUTION SLIDER CSS ============================================= -->
@@ -38,8 +37,7 @@
 </head>
 <body id="bg">
 <div class="page-wraper">
-	
-    <div class="page-content bg-white">
+	<div class="page-content bg-white">
         <!-- Main Slider -->
 		<div class="section-area section-sp2">
 			<div class="container">
@@ -48,12 +46,8 @@
 						<div class="item" onclick="play()">
 							<div class="event-bx">
 								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-month">01</div>
-										</div>
-									</div>
 									<div class="event-info">
+										<h5 class="event-subtitle">1 - dars</h5>
 										<h4 class="event-title">Using modal verbs</h4>
 										<span class="mt-3">Modal fe'llarning qo'llanilishi</span>
 									</div>
@@ -63,14 +57,10 @@
 						<div class="item" onclick="play()">
 							<div class="event-bx">
 								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-month">02</div>
-										</div>
-									</div>
 									<div class="event-info">
-										<h4 class="event-title">Education Autumn Tour 2019</h4>
-										<span class="mt-3">A.Paulo</span>
+										<h5 class="event-subtitle">1 - dars</h5>
+										<h4 class="event-title">Using modal verbs</h4>
+										<span class="mt-3">Modal fe'llarning qo'llanilishi</span>
 									</div>
 								</div>
 							</div>
@@ -78,14 +68,10 @@
 						<div class="item" onclick="play()">
 							<div class="event-bx">
 								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-month">03</div>
-										</div>
-									</div>
 									<div class="event-info">
-										<h4 class="event-title">Education Autumn Tour 2019</h4>
-										<span class="mt-3">A.Paulo</span>
+										<h5 class="event-subtitle">1 - dars</h5>
+										<h4 class="event-title">Using modal verbs</h4>
+										<span class="mt-3">Modal fe'llarning qo'llanilishi</span>
 									</div>
 								</div>
 							</div>
@@ -93,15 +79,10 @@
 						<div class="item" onclick="play()">
 							<div class="event-bx">
 								<div class="info-bx d-flex">
-									<div>
-										<div class="event-time">
-											<div class="event-month">04</div>
-										</div>
-									</div>
 									<div class="event-info">
-										<h5 class="event-subtitle">4 - dars</h5>
-										<h4 class="event-title">Education Autumn Tour 2019</h4>
-										<span class="mt-3">A.Paulo</span>
+										<h5 class="event-subtitle">1 - dars</h5>
+										<h4 class="event-title">Using modal verbs</h4>
+										<span class="mt-3">Modal fe'llarning qo'llanilishi</span>
 									</div>
 								</div>
 							</div>
@@ -110,21 +91,25 @@
 				</div>
 			</div>
 		</div>
-		<div class="blob blue text-center">
-			<img src="/assets/images/logo/logo.png" alt="logo" style="width: 90px; height: 100%;">
-		</div>
     </div>
 </div>
-<audio id="audio" src="https://cdn.jsdelivr.net/npm/sample-audio-files@1.0.7/media/Justice_Genesis_first_third_sec_tight.wav" preload="auto"></audio>
+
+<audio id="audio" src="assets/sounds/Recording.m4a" preload="auto"></audio>
 
 <script type="text/javascript">
-
-    function play(){
+    function playa(){
 		var audio = document.getElementById("audio");
+		audio.pause();
         audio.play();
     };
 
-	
+	$(selector).click(function(e) {
+		if(e.shiftKey) {
+			var audioElement = document.createElement('audio');
+			audioElement.setAttribute('src', 'assets/sounds/Recording.m4a');
+			audioElement.play();
+		}
+	});
 </script>
 
 <!-- External JavaScripts -->

@@ -2164,8 +2164,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 	padding: 7.5rem 3rem;
 }
 .event-time{
-	color: #fff;
-    background-color: var(--primary);
+	font-size: 20px;
+	color: #07489b;
+    background-color: transparent;
     text-align: center;
     padding: 15px 10px;
     border-radius: 4px;
@@ -2177,14 +2178,20 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
     font-weight: 700;
     line-height: 55px;
 }
+
 .event-info .event-title{
-	font-family: 'Poppins';
-	font-weight: 700;
-	margin-bottom:5px;
-	font-size:24px;
+	font-family: 'Poppins', sans-serif;
+	margin-bottom: 5px;
+	font-size: 34px;
 	color: #07489b;
 	line-height: 1.2;
+	margin-bottom: 40px;
 }
+
+.event-info span{
+	font-size: 25px;
+}
+
 .event-info .media-post{
 	margin-bottom:10px;
 }
@@ -2215,14 +2222,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 }
 
 .upcoming-event-carousel .owl-item.active.center .item .event-bx .info-bx{
-	border: 2px solid #07489b;                   
+	border: 3px solid black;                   
 }
 
-.upcoming-event-carousel .owl-item.active.center .item .event-bx 
-.info-bx .event-info{
-	padding: 10px;
-	border: 2px solid #07489b;                   
-}
+
 
 .upcoming-event-carousel .owl-item.active.center{
     transform: scale(1);
@@ -3131,10 +3134,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 		padding: 10px 8px;
 	}
 	.event-bx .info-bx {
-		padding: 20px;
+		padding: 60px 15px;
 	}
 	.event-info .event-title{
-		 font-size: 20px;
+		 font-size: 28px;
 	}
 	.upcoming-event-carousel.owl-btn-1 .owl-prev, 
 	.upcoming-event-carousel.owl-btn-1 .owl-next{
@@ -3408,12 +3411,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 
 @media (min-width: 320px) and (max-width: 770px){
 	.event-subtitle{
+		font-family: 'Poppins', sans-serif;;
+		font-size: 26px;
 		display: block;
+		margin-bottom: 40px;
+		font-weight: bolder;
 	}
 }
 
 @media only screen and (min-width: 771px){
 	.event-subtitle{
-		display: none;
+		font-size: 34px;
+		margin-bottom: 40px;
+		font-weight: 700;
 	}
 }
