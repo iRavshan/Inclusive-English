@@ -2165,7 +2165,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 }
 .event-time{
 	font-size: 20px;
-	color: #07489b;
+	color: black;
     background-color: transparent;
     text-align: center;
     padding: 15px 10px;
@@ -2180,10 +2180,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 }
 
 .event-info .event-title{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto Mono', monospace;
 	margin-bottom: 5px;
 	font-size: 34px;
-	color: #07489b;
+	color: black;
 	line-height: 1.2;
 	margin-bottom: 40px;
 }
@@ -2222,6 +2222,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff5e14', end
 }
 
 .upcoming-event-carousel .owl-item.active.center .item .event-bx .info-bx{
+	background-color: #f6ba32;
 	border: 3px solid black;                   
 }
 
@@ -3411,7 +3412,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#391800', end
 
 @media (min-width: 320px) and (max-width: 770px){
 	.event-subtitle{
-		font-family: 'Poppins', sans-serif;;
+		font-family: 'Roboto Mono', monospace;
 		font-size: 26px;
 		display: block;
 		margin-bottom: 40px;
