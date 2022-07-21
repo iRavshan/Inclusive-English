@@ -1,3 +1,12 @@
+/*
+***
+***
+Name: 			functions.js
+Written by: 	ThemeTrade 
+Theme Version:	1.0.0
+***
+***
+*/
 (function($) {
 	
 		'use strict';
@@ -507,5 +516,3 @@
 	jQuery(window).on('resize',function(){ThemeBuilder.changeTheScreen();});
 	
 })(jQuery);
-
-
